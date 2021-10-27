@@ -257,7 +257,7 @@ SECTIONS
   /* [RONLY] Memory region dedicated to patterns */
   .TEST_RODATA         : ALIGN(16) /* this is a requirement of the ABI(?) */
   {
-   __TEST_RODATA_START = .;
+   __TEST_RODATA_END = .;
    *(.TEST_RODATA)
    __TEST_RODATA_END = .;
   } >instrram

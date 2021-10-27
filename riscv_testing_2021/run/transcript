@@ -1,4 +1,6 @@
-# Reading pref.tcl
+# vsim -c tb_top_vopt "+firmware=/home/s284963/Testing-Lab/riscv_testing_2021/sbst/sbst.hex" "+dumpports+nocollapse" -suppress 3015 -do "/home/s284963/Testing-Lab/riscv_testing_2021/vsim.tcl" 
+# Start time: 23:01:14 on Oct 27,2021
+# Loading /tmp/s284963@po.polito.it_dpi_31788/linux_x86_64_gcc-4.7.4/export_tramp.so
 # //  Questa Sim-64
 # //  Version 10.5c_4 linux_x86_64 Nov 30 2016
 # //
@@ -13,9 +15,6 @@
 # //  is prohibited from disclosure under the Trade Secrets Act,
 # //  18 U.S.C. Section 1905.
 # //
-# vsim -gui tb_top_vopt "+firmware=/home/s284963/riscv_testing_2021/sbst/sbst.hex" "+dumpports+nocollapse" -do "/home/s284963/riscv_testing_2021/vsim.tcl" 
-# Start time: 09:37:45 on Oct 21,2021
-# Loading /tmp/s284963@po.polito.it_dpi_14448/linux_x86_64_gcc-4.7.4/export_tramp.so
 # Loading sv_std.std
 # Loading work.tb_top(fast)
 # Loading work.riscv_wrapper(fast)
@@ -218,22 +217,15 @@
 # Loading work.riscv_random_stall(fast__1)
 # Loading work.riscv_random_interrupt_generator_sv_unit(fast)
 # Loading work.riscv_random_interrupt_generator(fast)
-# ** Warning: (vsim-3015) /home/s284963/riscv_testing_2021/tb/core/mm_ram.sv(570): [PCDPC] - Port size (32) does not match connection size (22) for port 'addr_core_i'. The port definition is at: /home/s284963/riscv_testing_2021/tb/tb_riscv/riscv_random_stall.sv(51).
-#    Time: 0 ps  Iteration: 0  Instance: /tb_top/riscv_wrapper_i/ram_i/instr_random_stalls File: /home/s284963/riscv_testing_2021/tb/tb_riscv/riscv_random_stall.sv
-# ** Warning: (vsim-3015) /home/s284963/riscv_testing_2021/tb/core/mm_ram.sv(570): [PCDPC] - Port size (32) does not match connection size (22) for port 'addr_mem_o'. The port definition is at: /home/s284963/riscv_testing_2021/tb/tb_riscv/riscv_random_stall.sv(52).
-#    Time: 0 ps  Iteration: 0  Instance: /tb_top/riscv_wrapper_i/ram_i/instr_random_stalls File: /home/s284963/riscv_testing_2021/tb/tb_riscv/riscv_random_stall.sv
-# ** Warning: (vsim-3015) /home/s284963/riscv_testing_2021/tb/core/mm_ram.sv(606): [PCDPC] - Port size (32) does not match connection size (22) for port 'addr_core_i'. The port definition is at: /home/s284963/riscv_testing_2021/tb/tb_riscv/riscv_random_stall.sv(51).
-#    Time: 0 ps  Iteration: 0  Instance: /tb_top/riscv_wrapper_i/ram_i/data_random_stalls File: /home/s284963/riscv_testing_2021/tb/tb_riscv/riscv_random_stall.sv
-# ** Warning: (vsim-3015) /home/s284963/riscv_testing_2021/tb/core/mm_ram.sv(606): [PCDPC] - Port size (32) does not match connection size (22) for port 'addr_mem_o'. The port definition is at: /home/s284963/riscv_testing_2021/tb/tb_riscv/riscv_random_stall.sv(52).
-#    Time: 0 ps  Iteration: 0  Instance: /tb_top/riscv_wrapper_i/ram_i/data_random_stalls File: /home/s284963/riscv_testing_2021/tb/tb_riscv/riscv_random_stall.sv
-# Compiling /tmp/s284963@po.polito.it_dpi_14448/linux_x86_64_gcc-4.7.4/exportwrapper.c
-# Loading /tmp/s284963@po.polito.it_dpi_14448/linux_x86_64_gcc-4.7.4/vsim_auto_compile.so
-# do /home/s284963/riscv_testing_2021/vsim.tcl
+# Compiling /tmp/s284963@po.polito.it_dpi_31788/linux_x86_64_gcc-4.7.4/exportwrapper.c
+# Loading /tmp/s284963@po.polito.it_dpi_31788/linux_x86_64_gcc-4.7.4/vsim_auto_compile.so
+# do /home/s284963/Testing-Lab/riscv_testing_2021/vsim.tcl
 # 1
 # EXIT SUCCESS
 # ** Note: $finish    : /home/s284963/riscv_testing_2021/tb/core/tb_top.sv(137)
 #    Time: 5600 ns  Iteration: 1  Instance: /tb_top
 # 1
 # Break in Module tb_top at /home/s284963/riscv_testing_2021/tb/core/tb_top.sv line 137
-# End time: 09:56:10 on Oct 21,2021, Elapsed time: 0:18:25
-# Errors: 0, Warnings: 4
+# Stopped at /home/s284963/riscv_testing_2021/tb/core/tb_top.sv line 137
+# End time: 23:01:16 on Oct 27,2021, Elapsed time: 0:00:02
+# Errors: 0, Warnings: 0
