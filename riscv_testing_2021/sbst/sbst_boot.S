@@ -121,6 +121,7 @@ _sbst_boot:
 	sw				x32, .TEST_RESULT
 
 	// TODO: restore non-volatile registers
+	la		t0, .TEST_DATA
 	sw              x1, 8(t0)
 	sw              x2, 16(t0)
 	sw              x3, 24(t0)
