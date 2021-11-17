@@ -1,7 +1,7 @@
 uplevel #0 source pdt2002.dc_setup.tcl
 
-read_verilog b10.v
-current_design b10
+read_verilog b12.v
+current_design b12
 link
 check_design
 
@@ -23,7 +23,7 @@ report_scan_path -view existing -cell all
 
 report_area
 
-write -hierarchy -format verilog -output b10_scan.v
-write_test_protocol -output b10_scan.spf
+write -hierarchy -format verilog -output b12_scan.v
+write_test_protocol -output b12_scan.spf
 
 quit

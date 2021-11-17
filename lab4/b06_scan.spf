@@ -58,7 +58,7 @@ Timing {
          "all_inputs" { 0 { '0ns' D; } }
          "all_inputs" { 1 { '0ns' U; } }
          "all_inputs" { Z { '0ns' Z; } }
-         t:all_inputs" { N { '0ns' N; } }
+         "all_inputs" { N { '0ns' N; } }
          "all_outputs" { X { '0ns' X; '40ns' X; } }
          "all_outputs" { H { '0ns' X; '40ns' H; } }
          "all_outputs" { L { '0ns' X; '40ns' L; } }
@@ -156,4 +156,4 @@ MacroDefs {
       V { "clock"=0; "reset"=0; }
       V { }
    }
-
+}
