@@ -1,0 +1,188 @@
+QuestaSim-64 vcom 10.5c_4 Compiler 2016.11 Nov 30 2016
+Start time: 13:23:11 on Nov 17,2021
+vcom -2008 -suppress 1141 ../pdt2002_sim.vhd 
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling package gate_lib
+-- Compiling entity AND_GATE
+-- Compiling architecture behav of AND_GATE
+-- Compiling entity AND3_GATE
+-- Compiling architecture behav of AND3_GATE
+-- Compiling entity AND4_GATE
+-- Compiling architecture behav of AND4_GATE
+-- Compiling entity AND5_GATE
+-- Compiling architecture behav of AND5_GATE
+-- Compiling entity NAND_GATE
+-- Compiling architecture behav of NAND_GATE
+-- Compiling entity NAND3_GATE
+-- Compiling architecture behav of NAND3_GATE
+-- Compiling entity NAND4_GATE
+-- Compiling architecture behav of NAND4_GATE
+-- Compiling entity NAND5_GATE
+-- Compiling architecture behav of NAND5_GATE
+-- Compiling entity OR_GATE
+-- Compiling architecture behav of OR_GATE
+-- Compiling entity OR3_GATE
+-- Compiling architecture behav of OR3_GATE
+-- Compiling entity OR4_GATE
+-- Compiling architecture behav of OR4_GATE
+-- Compiling entity OR5_GATE
+-- Compiling architecture behav of OR5_GATE
+-- Compiling entity NOR_GATE
+-- Compiling architecture behav of NOR_GATE
+-- Compiling entity NOR3_GATE
+-- Compiling architecture behav of NOR3_GATE
+-- Compiling entity NOR4_GATE
+-- Compiling architecture behav of NOR4_GATE
+-- Compiling entity NOR5_GATE
+-- Compiling architecture behav of NOR5_GATE
+-- Compiling entity XOR_GATE
+-- Compiling architecture behav of XOR_GATE
+-- Compiling entity XOR3_GATE
+-- Compiling architecture behav of XOR3_GATE
+-- Compiling entity XOR4_GATE
+-- Compiling architecture behav of XOR4_GATE
+-- Compiling entity XOR5_GATE
+-- Compiling architecture behav of XOR5_GATE
+-- Compiling entity XNOR_GATE
+-- Compiling architecture behav of XNOR_GATE
+-- Compiling entity XNOR3_GATE
+-- Compiling architecture behav of XNOR3_GATE
+-- Compiling entity XNOR4_GATE
+-- Compiling architecture behav of XNOR4_GATE
+-- Compiling entity XNOR5_GATE
+-- Compiling architecture behav of XNOR5_GATE
+-- Compiling entity INV_GATE
+-- Compiling architecture behav of INV_GATE
+-- Compiling entity BUF_GATE
+-- Compiling architecture behav of BUF_GATE
+-- Compiling entity LATCH_D
+-- Compiling architecture behav of LATCH_D
+-- Compiling entity FLIP_FLOP_D
+-- Compiling architecture behav of FLIP_FLOP_D
+-- Compiling entity FLIP_FLOP_D_SCAN
+-- Compiling architecture behav of FLIP_FLOP_D_SCAN
+-- Compiling entity FLIP_FLOP_D_RESET
+-- Compiling architecture behav of FLIP_FLOP_D_RESET
+-- Compiling entity FLIP_FLOP_D_RESET_SCAN
+-- Compiling architecture behav of FLIP_FLOP_D_RESET_SCAN
+-- Compiling entity FLIP_FLOP_D_PRESET
+-- Compiling architecture behav of FLIP_FLOP_D_PRESET
+-- Compiling entity FLIP_FLOP_D_PRESET_SCAN
+-- Compiling architecture behav of FLIP_FLOP_D_PRESET_SCAN
+-- Compiling entity FLIP_FLOP_D_RESET_PRESET
+-- Compiling architecture behav of FLIP_FLOP_D_RESET_PRESET
+-- Compiling entity FLIP_FLOP_D_RESET_PRESET_SCAN
+-- Compiling architecture behav of FLIP_FLOP_D_RESET_PRESET_SCAN
+-- Compiling entity THREE_STATE_BUF_GATE
+-- Compiling architecture behav of THREE_STATE_BUF_GATE
+End time: 13:23:11 on Nov 17,2021, Elapsed time: 0:00:00
+Errors: 0, Warnings: 0
+QuestaSim-64 vlog 10.5c_4 Compiler 2016.11 Nov 30 2016
+Start time: 13:23:11 on Nov 17,2021
+vlog ../b12.v 
+-- Compiling module b12
+
+Top level modules:
+	b12
+End time: 13:23:11 on Nov 17,2021, Elapsed time: 0:00:00
+Errors: 0, Warnings: 0
+QuestaSim-64 vlog 10.5c_4 Compiler 2016.11 Nov 30 2016
+Start time: 13:23:11 on Nov 17,2021
+vlog ../lfsr.v 
+-- Compiling module lfsr
+
+Top level modules:
+	lfsr
+End time: 13:23:11 on Nov 17,2021, Elapsed time: 0:00:00
+Errors: 0, Warnings: 0
+QuestaSim-64 vcom 10.5c_4 Compiler 2016.11 Nov 30 2016
+Start time: 13:23:11 on Nov 17,2021
+vcom -2008 -suppress 1141 ../b12_testbench.vhd 
+-- Loading package STANDARD
+-- Loading package ENV
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Loading package std_logic_textio
+-- Compiling entity b12_testbench
+-- Compiling architecture tb of b12_testbench
+-- Compiling configuration cfg_b12_testbench
+-- Loading entity b12_testbench
+-- Loading architecture tb of b12_testbench
+-- Loading package vl_types
+-- Loading entity lfsr
+-- Loading entity b12
+End time: 13:23:11 on Nov 17,2021, Elapsed time: 0:00:00
+Errors: 0, Warnings: 0
+Reading pref.tcl
+
+# 10.5c_4
+
+# vsim -c -novopt work.b12_testbench -do "../b12_simulation_script.tcl" -wlf sim.wlf 
+# Start time: 13:23:12 on Nov 17,2021
+# ** Warning: (vsim-8891) All optimizations are turned off because the -novopt switch is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features please see the User's Manual section on Preserving Object Visibility with vopt.
+# //  Questa Sim-64
+# //  Version 10.5c_4 linux_x86_64 Nov 30 2016
+# //
+# //  Copyright 1991-2016 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  QuestaSim and its associated documentation contain trade
+# //  secrets and commercial or financial information that are the property of
+# //  Mentor Graphics Corporation and are privileged, confidential,
+# //  and exempt from disclosure under the Freedom of Information Act,
+# //  5 U.S.C. Section 552. Furthermore, this information
+# //  is prohibited from disclosure under the Trade Secrets Act,
+# //  18 U.S.C. Section 1905.
+# //
+# Loading std.standard
+# Refreshing /home/s284963/lab6/run/work.b12_testbench(tb)
+# Loading std.env(body)
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading ieee.std_logic_textio(body)
+# Loading work.b12_testbench(tb)
+# Refreshing /home/s284963/lab6/run/work.lfsr
+# Loading work.lfsr
+# Refreshing /home/s284963/lab6/run/work.b12
+# Loading work.b12
+# Refreshing /home/s284963/lab6/run/work.flip_flop_d_reset(behav)
+# Loading work.flip_flop_d_reset(behav)
+# Refreshing /home/s284963/lab6/run/work.inv_gate(behav)
+# Loading work.inv_gate(behav)
+# Refreshing /home/s284963/lab6/run/work.nand_gate(behav)
+# Loading work.nand_gate(behav)
+# Refreshing /home/s284963/lab6/run/work.nand4_gate(behav)
+# Loading work.nand4_gate(behav)
+# Refreshing /home/s284963/lab6/run/work.nand3_gate(behav)
+# Loading work.nand3_gate(behav)
+# Refreshing /home/s284963/lab6/run/work.or_gate(behav)
+# Loading work.or_gate(behav)
+# Refreshing /home/s284963/lab6/run/work.and3_gate(behav)
+# Loading work.and3_gate(behav)
+# Refreshing /home/s284963/lab6/run/work.and_gate(behav)
+# Loading work.and_gate(behav)
+# Refreshing /home/s284963/lab6/run/work.nor4_gate(behav)
+# Loading work.nor4_gate(behav)
+# Refreshing /home/s284963/lab6/run/work.or3_gate(behav)
+# Loading work.or3_gate(behav)
+# Refreshing /home/s284963/lab6/run/work.or4_gate(behav)
+# Loading work.or4_gate(behav)
+# Refreshing /home/s284963/lab6/run/work.and4_gate(behav)
+# Loading work.and4_gate(behav)
+# Refreshing /home/s284963/lab6/run/work.nor_gate(behav)
+# Loading work.nor_gate(behav)
+# Refreshing /home/s284963/lab6/run/work.nand5_gate(behav)
+# Loading work.nand5_gate(behav)
+# Refreshing /home/s284963/lab6/run/work.and5_gate(behav)
+# Loading work.and5_gate(behav)
+# Refreshing /home/s284963/lab6/run/work.nor3_gate(behav)
+# Loading work.nor3_gate(behav)
+# do ../b12_simulation_script.tcl
+# nl:XXXX nloss:'X' speaker:'X'
+# nl:0000 nloss:'0' speaker:'0'
+# End time: 13:23:13 on Nov 17,2021, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 1

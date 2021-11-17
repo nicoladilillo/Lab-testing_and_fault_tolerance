@@ -1,0 +1,108 @@
+
+                                  TetraMAX(R) 
+
+
+                 Version M-2016.12 for linux64 - Nov 21, 2016  
+
+                    Copyright (c) 1996 - 2016 Synopsys, Inc.
+   This software and the associated documentation are proprietary to Synopsys,
+ Inc. This software may only be used in accordance with the terms and conditions
+ of a written license agreement with Synopsys, Inc. All other use, reproduction,
+            or distribution of this software is strictly prohibited.
+
+
+ Tcl mode is on by default. Use -notcl to run in native mode.
+ Executing startup file "/eda/synopsys/2016-17/RHELx86/TMAX_2016.12/admin/setup/tmaxtcl.rc".
+read_netlist pdt2002_tmax.v
+ Begin reading netlist ( pdt2002_tmax.v )...
+ End parsing Verilog file pdt2002_tmax.v with 0 errors.
+ End reading netlist: #modules=35, top=LOGIC_1, #lines=291, CPU_time=0.01 sec, Memory=0MB
+read_netlist b10.v
+ Begin reading netlist ( b10.v )...
+ End parsing Verilog file b10.v with 0 errors.
+ End reading netlist: #modules=1, top=b10, #lines=208, CPU_time=0.00 sec, Memory=0MB
+run_build_model b10
+ ------------------------------------------------------------------------------
+ Begin build model for topcut = b10 ...
+ ------------------------------------------------------------------------------
+ There were 34 primitives and 0 faultable pins removed during model optimizations
+ End build model: #primitives=189, CPU_time=0.00 sec, Memory=0MB
+ ------------------------------------------------------------------------------
+ Begin learning analyses...
+ End learning analyses, total learning CPU time=0.00 sec.
+ ------------------------------------------------------------------------------
+add_clocks 0 clock
+add_clocks 0 reset
+run_drc
+ ------------------------------------------------------------------------------
+ Begin scan design rules checking...
+ ------------------------------------------------------------------------------
+ Begin simulating test protocol procedures...
+ Test protocol simulation completed, CPU time=0.00 sec.
+ ------------------------------------------------------------------------------
+ Begin scan chain operation checking...
+ Scan chain operation checking completed, CPU time=0.00 sec.
+ ------------------------------------------------------------------------------
+ Begin clock rules checking...
+ Clock rules checking completed, CPU time=0.00 sec.
+ Clock grouping results: #pairs=0, #groups=0, #serial_pairs=0, #disturbed_pairs=0, CPU time=0.00 sec.
+ ------------------------------------------------------------------------------
+ Begin nonscan rules checking...
+ Nonscan cell summary: #DFF=17  #DLAT=0  #RAM_outs=0  tla_usage_type=none
+ Nonscan behavior:  #LE=17
+ Nonscan rules checking completed, CPU time=0.00 sec.
+ ------------------------------------------------------------------------------
+ Begin DRC dependent learning...
+ Fast-sequential depth results: control=5(180), observe=3(117), detect=7(98), CPU time=0.00 sec
+ DRC dependent learning completed, CPU time=0.00 sec.
+ ------------------------------------------------------------------------------
+ DRC Summary Report
+ ------------------------------------------------------------------------------
+ No violations occurred during DRC process.
+ Design rules checking was successful, total CPU time=0.00 sec.
+ ------------------------------------------------------------------------------
+set_patterns -external run/b10_dumpports.vcd -sensitive -strobe_period {100 ns} -strobe_offset {40 ns} -vcd_clock auto
+ Note: adding -vcd_clock 0 clock
+ Note: adding -vcd_clock 0 reset
+ End reading 100 patterns, CPU_time = 0.00 sec, Memory = 0MB
+run_simulation -sequential
+ Begin sequential simulation of 100 external patterns.
+ Simulation completed: #patterns=100/298, #fail_pats=0(0), #failing_meas=0(0), #rejected_pats=0, CPU time=0.00
+set_faults -model stuck
+#set_delay -launch_cycle system_clock
+#set_faults -model transition
+add_faults -all
+ 1124 faults were added to fault list.
+run_fault_sim -sequential
+ ------------------------------------------------------------------------------
+ Begin sequential fault simulation of 1124 faults on 100 external patterns.
+ -----------------------------------------------------------
+ #faults    pass #faults   cum. #faults     test    process
+ simulated  detect/total   detect/active  coverage  CPU time
+ ---------  -------------  -------------  --------  --------
+ 1124          861   1124     861    263    77.18%      0.01
+ Fault simulation completed: #faults_simulated=1124, test_coverage=77.18%, CPU time=0.01
+set_faults -fault_coverage
+ Warning: Unused gate deletion affects fault coverage calculation. (M245)
+report_summaries
+     Uncollapsed Stuck Fault Summary Report
+ -----------------------------------------------
+ fault class                     code   #faults
+ ------------------------------  ----  ---------
+ Detected                         DT        861
+ Possibly detected                PT         13
+ Undetectable                     UD          0
+ ATPG untestable                  AU          0
+ Not detected                     ND        250
+ -----------------------------------------------
+ total faults                              1124
+ test coverage                            77.18%
+ fault coverage                           77.18%
+ -----------------------------------------------
+            Pattern Summary Report
+ -----------------------------------------------
+ #internal patterns                           0
+ #external patterns (run/b10_dumpports.vcd)    100
+     #full_sequential patterns              100
+ -----------------------------------------------
+quit
